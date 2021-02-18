@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Optima;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+/* Background color is commented out
+#Home {background-color: white;}
+#News {background-color: green;}
+#Contact {background-color: blue;}
+#About {background-color: orange;}
+*/
+
+body {
+    font-family: arial, helvetica, sans-serif;
+    font-size: 14px;
+    color: black;
+    background-color: WhiteSmoke;
+    margin: 20px;
+    padding: 10px;
+}
+
+/* This is a comment, by the way */
+
+p {
+    font-family: Optima;
+	font-size: 16px;
+	line-height: 20px;
+	padding: 10px;
+}
+
+h1 {
+    font-family: Optima;
+	color: PowderBlue;
+    background-color: gray;
+    font-size: 2em;
+    margin: 0;
+    margin-bottom: 7px;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    border-bottom-style: solid;
+    border-bottom-width: 0.4em;
+    border-bottom-color: black;
+}
+
+h2 {
+    font-family: Optima;
+	color: black;
+    background-color: PowderBlue;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 2px;
+    padding-left: 14px;
+}
+
+h3 {
+    color: #999;
+    font-size: 1.25em;
+}
+
+img {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #ccc;
+}
+
+a {
+    text-decoration: none;
+	font-size: 25px;
+	font-style: bold;
+	font-style: underline;
+	color: black;
+}
+
+strong {
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+li {
+    color: #900;
+    font-style: italic;
+}
+
+table {
+    background-color: #ccc;
+}
+</style>
+</head>
+<body>
+<button class="tablink" onclick="openPage('Home', this, 'pink')">Home</button>
+<button class="tablink" onclick="openPage('Brunch', this, 'pink')" id="defaultOpen">Brunch</button>
+<button class="tablink" onclick="openPage('LunchDinner', this, 'pink')">Lunch and Dinner</button>
+<button class="tablink" onclick="openPage('Healthy', this, 'pink')">Healthy</button>
+
+<div id="Home" class="tabcontent">
+	<h1>Supporting local restaurants through COVID</h1>
+	
+	<p> 
+	</p>
+	<p style="text-align:center;"><img src="images/home-page.jpg" width="600" height="450" alt="HomeImage"></p>
+	
+	<p style="text-align:center;">It is impossible to deny that the COVID-19 pandemic has had a major impact on all our lives. It has put countless life milestones, </p>
+	<p style="text-align:center;">family gatherings,  and personal goals on hold. And for many, it has resulted in extremely difficult financial situations. Among those  </p>
+	<p style="text-align:center;">most affected are our community's small business owners, with restaurants being hit particularly hard. However, we can all do our</p>
+	<p style="text-align:center;"> part by supporting them in a safe, delicious way. Numerous restaurants in Toronto are offering takeout and curbside pickup, allowing </p>
+	<p style="text-align:center;"> us Torontonians to treat themselves to a variety of mouthwatering options. Here, you will find some of our favourite local spots by </p>
+	<p style="text-align:center;"> category. So dive in and enjoy some delicious bites which will satisfy your cravings while giving back to our fellow Torontonians.</p>
+	
+	
+
+</div>
+
+<div id="Brunch" class="tabcontent">
+	<h1>Brunch</h1>
+	
+	<h2><a href="https://mildreds.ca/">Mildred's Temple Kitchen</a></h2>
+	
+	<p style="float:right;"><img src="images/mildreds.jpg" width="300" height="220" alt="Mildred's"></p>
+	
+
+	
+	<p>   Mildred's Temple Kitchen, found in Toronto's Liberty Village, is a pick which is sure not to disappoint. Normally, the local spot is brimming with guests, but now you can savour a delicious brunch without the long waiting times. If you're looking to satisfy your sweeth tooth, look no further than their famous blueberry pancakes. These impeccably fluffy stacks are topped with wild blueberry compote, organic maple syrup, and whipped cream. For those who prefer a more savoury brunch, Mildred's has got you covered too. Options like their vedas (poached eggs served on a croissant), burgers, and eggs will leave you blissfully satisfied. And, if you're looking for something a little extra, their freshly baked scones and biscuits will certainly hit the spot. </p>
+	
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	<h2><a href="https://www.landwer.ca/">Cafe Landwer</a></h2>
+	
+		<p style="float:right;"><img src="images/cafelandwer.jpg" width="300" height="220" alt="Landwer"></p>
+		
+		<p>   No matter what your brunch cravings are, Cafe Landwer will satisfy them. This Israeli-inspired restaurant, with four locations in the GTA, is popular with good reason. They have an extensive menu of brunch options, with everything from their breads to their sauces made in-house. Their most famous brunch item is their shakshouka (pictured to the right), an authentic Israeli dish featuring poached eggs. However, they also offer breakfast platters, egg dishes, parfaits, waffles, and pancakes. There are even delicious options for plant-based diners, such as a vegan shakshouka, chickpea omelette, and acai bowl. Trust us, you'll keep everyone in the family happy with this one. </p>
+		
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		
+		<h2><a href="https://alchemycoffee.ca/">Alchemy Coffee</a></h2>
+	
+		<p style="float:right;"><img src="images/alchemy.jpg" width="300" height="220" alt="Alchemy"></p>
+			
+		<p>Now this quaint spot, located in Markham, may not have as many dietary options as some of our other picks. But, they sure know how to do brunch well. Their chicken and waffles (pictured to the right), served with a sweet chili sauce and side salad, are a constant crowd pleaser. However, they've got far more up their sleeve, including an extensive lists of egg benedicts, pasta dishes, and scrambled egg variations. As well, they have some delicious sweet options such as their buttermilk pancakes, which are topped with a berry compote, cereal, and condensed milk syrup. Some of their flavour combinations might seem like a long shot at first, but when you try them, they're absolute magic. </p>
+		
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		
+		<h2><a href="https://parallelbrothers.com/">Parallel</a></h2>
+		
+		<p style="float:right;"><img src="images/parallel.jpg" width="300" height="220" alt="Parallel"></p>
+		
+		<p>When it comes to nailing an authentic middle eastern brunch, Parallel is hard to beat. They offer delicious, wholesome food which is guaranteed to leave your taste buds singing. To start, their dips are incredible, with four variations of hummus, delicious tahini, labaneh, and babaganoush. Their hearty salads, hot meat platters, and flavourful fried cauliflower are also sure to impress. However, Parallel's most popular menu item is their herb falafel, with a fragrant, authentic flavour which will absolutely blow your mind. If you want to enjoy the taste of Parallel for a bit longer, you can even pick up a few jars of their sesame butter along with your order.</p>
+		
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		
+		<h2><a href="http://www.nextdoorrestaurant.com/">Next Door Restaurant</a></h2>
+		
+		<p style="float:right;"><img src="images/next-door.jpeg" width="300" height="220" alt="Parallel"></p>
+		
+		<p>The final member of our brunch picks, Next Door Restaurant, has definitely earned its spot. This incredible spot, located on Main Street Unionville, brings a modern twist to brunch. Some of its items, such as the kimchi duck hash and duck confit pancakes, are unique and eclectic. However, Next Door also has a way of adding an exciting spin to timeless classics. Their avocado toast, topped with delicious ingredients like roasted almonds and grilled halloumi, is to-die-for. And, their Japanese-inspired cheeseburger introduces a new dimension of flavour to a comforting meal. During this time, Next Door has also started offering brunch platters, which allow you to sample a variety of their offerings. While these items may be on the pricier side, they are most definitely worth it. </p>
+	</div>
+
+<div id="LunchDinner" class="tabcontent">
+	<h1>Lunch & Dinner</h1>
+	
+	<h2><a href="https://www.thaibasil.ca/">Thai Basil</a></h2>
+	
+	<p style="float:right;"><img src="images/thaibasil.jpg" width="280" height="200" alt="Thai Basil"></p>
+	
+
+	
+	<p>   With locations in both Toronto and Richmond Hill, this gem of a restaurant knows exactly what it's doing when it comes to Thai cuisine. From authentic appetizers to curries to noodles to rice, there is truly something for everyone in the family. Items like their spring rolls, warm soups, and refreshing salads are a great way to kick the meal off, but the true magic is in the main dishes. Favourites like their red curry, mango chicken, and basil tofu offer an incredible punch of flavour. For all the carb lovers out there, there is also an assortment of rice and noodle options, such as their basil chili noodles and pineapple fried rice.  </p>
+	
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	<h2><a href="http://www.lataquizza.com/menus/">La Taquizza</a></h2>
+	
+		<p style="float:right;"><img src="images/tacos.jpg" width="280" height="220" alt="La Taquizza"></p>
+		
+		<p>   While we may not be able to physically travel at the moment, takeout from La Taquizza will make you feel like you're vacationing in Mexico. This family run spot located in Vaughan offers delicious, authentic Mexican food. To start, you can never go wrong with their cheesy, loaded Gringo nachos. For your main, you'll then be faced with an extensive menu to choose from. They have a variety of tacos, gooey quesadillas, enchiladas, and burritos. There are also more classic offerings like their flautas and huaraches, corn 'sandals' filled with toppings of your choice. With various vegetarian options like their mushroom quesadilla and potato and onion tostada, nobody will leave hungry. </p>
+		
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		
+		<h2><a href="http://www.kamasutrarestaurant.ca/">Kamasutra Fine Indian Restaurant</a></h2>
+	
+		<p style="float:right;"><img src="images/kamasutra.jpg" width="280" height="220" alt="Kamasutra"></p>
+			
+		<p>Kamasutra, located in midtown Toronto, boasts some of the best Indian food the city has to offer. Now, this is one spot where you simply cannot skip the appetizers. Their paneer tikka melts in your mouth, while the cauliflower tandoori offers a burst of flavour. Your best bet is to get the tandoori sampler, so you can indulge in a variety of the appetizers they have to offer. The main courses certainly do not disappoint either. Favourites including the butter chicken, saag (spinach) lamb, and malai kofta (cottage cheese balls in a cashew nut sauce). If you want to save money and enjoy various items, we suggest going for one of the mixed thali dinners, which give you the option to mix and match different appetizers and mains. </p>
+		
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		
+		<h2><a href="https://www.costasorrento.ca/">Costa Sorrento</a></h2>
+		
+		<p style="float:right;"><img src="images/costa.jpeg" width="280" height="220" alt="Costa Sorrento"></p>
+		
+		<p>Costa Sorrento knows how to do Italian food, and they know how to do it well. With high quality ingredients and experienced chefs, you can expect a high level of quality from this Markham restaurant. The pastas are delicious and authentic, with the gnocchi in particular being light and fluffy. There is also a selection of mains for those who prefer a more protein centered meal. However, the real star of the show at Costa Sorrento is the pizza. Made the traditional Neopolitan way, these thin-crust pizzas absolutely melt in your mouth. The margherita is a classic option which never fails to deliver, while the diavola is another must-try. To end your night on the sweetest possible note, be sure to order one of their gelatos. While they may be on the pricier side, we promise your taste buds will thank you for it. </p>
+		
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		
+		<h2><a href="https://www.botreecuisine.com/">Bo Tree Plant Based Cuisine</a></h2>
+		
+		<p style="float:right;"><img src="images/botree.jpg" width="280" height="220" alt="Bo Tree"></p>
+		
+		<p>If you're looking for some incredible vegetarian food, look no further than Bo Tree Plant Based Cuisine. Located in Markham, they have an extensive list of options which will satisfy vegetarians and omnivores alike. Starting with appetizers here is a must, and while you'll love them all, we highly recommend you try the zingy buffalo cauliflower wings. For those looking for a healthier option, there are several exotic salads. But, it may be hard to resist going for one of their flatbreads, topped with gooey mozzarella and a generous portion of toppings. A household favourite is the forest pizza, containing sweet potatoes, wild mushrooms, and basil pesto. There are also a number of Asian options, like the chickenless katsu curry. Other amazing comfort foods include their pastas and sandwiches featuring imitation meat. </p>
+	
+</div>
+
+<div id="Healthy" class="tabcontent">
+	<h1>Healthy Eats</h1>
+	
+	<h2><a href="https://freshplantpowered.com/">Fresh</a></h2>
+	
+	<p style="float:right;"><img src="images/fresh.jpg" width="300" height="220" alt="Thai Basil"></p>
+	
+
+	
+	<p>   The whiff you get the moment you enter a Fresh location assures you that the meal you're about to enjoy will be nothing short of amazing. With nine locations spanning Toronto, Fresh prepares wholesome plant-based food in a masterful way. If you're looking for an exciting twist on tacos, their crispy cauliflower tacos are incredible. Another handheld favourite is their buffalo wrap, featuring crispy chick'n, buffalo sauce, vegan ranch, and fresh veggies. If you're looking for an even more nourishing meal, look no further than their salads and bowls. Among the salads, their supergreen caesar with tahini dressing is a personal favourite of mine. As for the bowls, the buddha and goddess bowls deliver modern takes on Asian flavours, while the tiger bowl always leaves me satisfied. Pro tip: when you visit, always order a side of onion rings, and never skimp on the sauce (trust us). </p>
+	
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	<h2><a href="https://www.hello123forever.com/">Hello 123</a></h2>
+	
+		<p style="float:right;"><img src="images/hello.jpeg" width="300" height="220" alt="Hello 123"></p>
+		
+		<p>   Hello 123, with locations in Vaughan and Toronto, offers an endless menu of mouthwatering, wholesome vegan options. From brunch to mains to desserts to smoothies, they have got you covered. If you're looking for a powerful way to start your day, some favourites including the tofu and avocado benedict, chickpea and kale omellete, and sweet and savoury toasts. Your options for lunch and dinner are just as exciting, with handhelds like their toasty tempeh sandwich, and nourishing bowls like their cauliflower tahini. If you're getting any of the bowls, we highly recommend adding their rich and flavourful sunflower flax seed bowls. Whatever you order here, you can't go wrong, but just make sure you come with an appetite. </p>
+		
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		
+		<h2><a href="https://marybekitchen.com/">Mary Be Kitchen</a></h2>
+	
+		<p style="float:right;"><img src="images/mary.jpg" width="300" height="220" alt="Mary Be Kitchen"></p>
+			
+		<p>Have you ever found yourself browsing a restaurant menu with no clue how you'll settle on just one choice? Well, with Mary Be Kitchen, you won't have to. This healthy, modern midtown spot offers a variety of combo options so that you can satisfy all your cravings. Everything they serve is both nutritious and delicious, but one of our protein favourites is the scallion-ginger organic tofu. Notable sides including the masala-roasted cauliflower, grilled chili-garlic brocolli, and mac n' cheese. If you're visiting for a quick breakfast instead, their smashed avo toast, almond butter toast, and California breakfast bowl are some enticing options. Mary Be will show you that the simplest ingredients can make the most amazing food. </p>
+		
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		
+		<h2><a href="https://www.parkafoodco.com/our-story">Parka Food Co</a></h2>
+		
+		<p style="float:right;"><img src="images/parka.jpg" width="300" height="220" alt="Parka Co"></p>
+		
+		<p>Parka Food Co, a plant-based restaurant in downtown Toronto, was founded with the mission to make veggies fun. And, their loyal customer base has clearly proven that they've achieved this goal. Their offerings range from handhelds to bowls to mains to their famous mac n' cashew cheese. Some of their most popular menu items include the portobello burger, truffle mushroom mac n' cheese, and the chipotle cauliflower bowl. Recently, they've even introduced mains including spaghetti with black bean quinoa meatballs and a turkey tofu dinner- a holiday favourite. And, if you'd like something to tide you over on for the drive home, their poutine and cauliflower fritters are both excellent options. </p>
+		
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		
+		<h2><a href="https://nutbar.co/">Nutbar</a></h2>
+		
+		<p style="float:right;"><img src="images/nutbar.jpg" width="300" height="220" alt="Nutbar"></p>
+		
+		<p>Nutbar, a superfood snack cafe with two locations in Toronto, is a go-to for anyone looking to nourish their body and treat their taste buds. This local business uses 100% organic ingredients and sources from the best suppliers. They boast a selection of wholesome smoothies, hot drinks, and cold tonics on their drink menu. They also offer breakfast items such as sweet and savoury toasts, gourmet oats, and exotic salads. To sweeten your experience, be sure to indulge in one of their decadent, refined-sugar free bites and bars. And, if you'd like to take some of this goodness home, they even offer cartons of their nutmilk, granola, and nut butter. </p>
+	</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
