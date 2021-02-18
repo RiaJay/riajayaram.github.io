@@ -1,1 +1,1 @@
-# riajayaram.github.io
+# RiaJay.github.io
